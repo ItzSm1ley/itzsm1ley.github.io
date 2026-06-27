@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Raleway";
-    src: url("../Fonts/Raleway-Light.ttf");
+    src: url(../Fonts/Raleway-Light.ttf);
 }
 
 :root {
@@ -26,7 +26,7 @@ body {
 .top{
     width: 100%;
     height: 80vh;
-    background-image: url('../Images/lpa-background.jpg');
+    background-image: url(../Images/lpa-background.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
