@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Raleway";
-    src: url(../Fonts/Raleway-Light.ttf);
+    src: url("../Fonts/Raleway-Light.ttf");
 }
 
 :root {
@@ -25,7 +25,7 @@ body {
 
 .top{
     width: 100%;
-    height: 80vh;
+    height: 100%;
     background-image: url(../Images/lpa-background.jpg);
     background-size: cover;
     background-position: center;
@@ -41,6 +41,11 @@ body {
 .overlay {
     border-image-source: linear-gradient(to top, hsl(199, 78%, 36%), hsla(199, 78%, 36%, 0.044));
     border-image-slice: fill 1;
+}
+
+.divider {
+    border-top: .5px solid #6767671e;
+    margin-top: 15px;
 }
 
 .top-bar{
@@ -88,16 +93,17 @@ body {
 }
 
 .top h1{
-    font-size: calc(3vw + 1.5vh);
+    font-size: 5vw;
     font-weight: 800;
     margin-bottom: 0;
+    margin-top: 300px;
     margin-left: var(--margin-object);
     width: 80%;
     color: white;
 }
 
 .top h2{
-    font-size: calc(1.5vw + 1vh);
+    font-size: 2vw;
     margin-top: 0;
     margin-left: var(--margin-object);
     width: 80%;
@@ -107,16 +113,25 @@ body {
 
 .top button{
     margin-left: var(--margin-object);
-    padding: 20px 20px;
+    padding: 1.5vh 2vw;
     background-color: hsl(199, 79%, 43%);
     color: white;
     border-radius: 7.5px;
     border: none;
     cursor: pointer;
     margin-bottom: 20px;
-    width: calc(10vw + 5vh);
+    width: auto;
     height: auto;
-    font-size: calc(1vw + 1vh);
+    font-size: 2vw;
+}
+
+.title {
+    font-size: 4vw;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: var(--margin-object);
+    color: #1E3E8A;
 }
 
 .cards-bg {
@@ -181,7 +196,7 @@ body {
 
 .card h2{
     position: relative;
-    font-size: calc(1.5vw + 1vh);
+    font-size: 2vw;
     text-align: center;
     color: white;
     font-weight: 200;
@@ -211,14 +226,6 @@ body {
     width: 100%;
     height: auto;
     background-color: #E0EDF9;
-}
-
-.clubs h1{
-    font-size: calc(3vw + 1.5vh);
-    font-weight: 800;
-    margin-top: 50px;
-    margin-left: var(--margin-object);
-    color: #1E3E8A;
 }
 
 .wrapper {
@@ -313,15 +320,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.title {
-    font-size: calc(3vw + 1.5vh);
-    font-weight: 800;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: var(--margin-object);
-    color: #1E3E8A;
 }
 
 .pictures p{
@@ -424,7 +422,6 @@ body {
   align-items: center;
 
   margin-right: var(--margin-object);
-  margin-left: var(--margin-object);
 }
 
 .news-header button {
@@ -438,14 +435,7 @@ body {
   margin-bottom: 20px;
 
   height: 75%;
-  font-size: calc(1vw + 1vh);
-}
-
-.news h1 {
-  font-size: calc(3vw + 1.5vh);
-  font-weight: 800;
-  margin-top: 50px;
-  color: #1E3E8A;
+  font-size: 2vw;
 }
 
 .news-section {
@@ -484,7 +474,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
-  font-size: calc(1.5vw + 1vh);
+  font-size: 2vw;
   color: #1E3E8A;
   font-weight: 200;
   margin-top: 20px;
@@ -498,4 +488,81 @@ body {
 
 .news-card:hover .news-caption{
   text-decoration-thickness: 2px;
+}
+
+.footer-top{
+  background-color: #F2F0F0;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: var(--margin-object);
+  padding-left: var(--margin-object);
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+
+.footer-left{
+  width: 10vw
+}
+.footer-left img{
+  margin-top: 20px;
+
+  width: 6vw;
+  height: auto;
+}
+
+.footer-middle{
+  width: 50vw;
+}
+.footer-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-title p{
+  padding: 20px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+}
+.contact{
+  font-size: 2vw;
+  margin-top: 0;
+}
+
+.footer-right{
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-right img{
+  width: 15vw;
+  height: auto;
+  object-fit: cover;
+
+  margin-bottom: 20px;
+}
+.footer-right a{
+  text-decoration: none;
+  text-align: right;
+  color:#1E3E8A;
+  font-size: 1vw;
+  margin-top: 0;
+  text-wrap: nowrap;
+}
+
+.footer-bottom{
+  overflow: hidden;
+  background-color: #1E3E8A;
+  color: white;
+  font-size: 1vw;
+  padding-left: var(--margin-object);
 }
