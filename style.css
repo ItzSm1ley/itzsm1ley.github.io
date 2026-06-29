@@ -499,7 +499,7 @@ body {
   justify-content: space-around;
   padding-right: var(--margin-object);
   padding-left: var(--margin-object);
-  padding-top: 80px;
+  padding-top: 5vh;
   padding-bottom: 200px;
 }
 
